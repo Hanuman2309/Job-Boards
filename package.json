@@ -1,0 +1,41 @@
+{
+  "name": "devjobs",
+  "version": "1.0.0",
+  "description": "DevJobs - A modern job board for developers",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:seed": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' prisma/seed.ts",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.0",
+    "next": "14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next-auth": "^4.24.5",
+    "bcryptjs": "^2.4.3",
+    "zod": "^3.22.4",
+    "clsx": "^2.1.0",
+    "date-fns": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/bcryptjs": "^2.4.6",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "prisma": "^5.10.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
